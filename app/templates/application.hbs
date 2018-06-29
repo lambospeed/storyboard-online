@@ -1,0 +1,289 @@
+{{#if session.isAuthenticated}}
+  Logged in as {{session.currentUser.email}}
+  <button {{action "signOut"}}>Sign out</button>
+  {{outlet}}
+{{else}}
+  <button {{action "signIn"}}>Sign in</button>
+  <button {{action "social" "facebook"}}>Sign in with Facebook</button>
+{{/if}}
+    <main class="main">
+        <header class="cover-wrap">
+            <div class="copy bottom text-left">
+                <img class="logo" src="http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/nfocus_logo_transparent_300px.5581d42a0a138.png">
+                <h1 class="title" contenteditable="true">Sweet Escapes</h1>
+            </div>
+            <video class="cover" autoplay="" poster="http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/MVI_1103_waterfall.55818a66e5ff4.jpg" loop="">
+                <source src="https://s3.amazonaws.com/media.cygnus.com/files/base/scomm/nfn/video/2015/06/Waterfall.mp4" type="video/mp4">
+                <source src="https://s3.amazonaws.com/media.cygnus.com/files/base/scomm/nfn/video/2015/06/Waterfall.ogv" type="video/ogg">
+                <source src="https://s3.amazonaws.com/media.cygnus.com/files/base/scomm/nfn/video/2015/06/Waterfall.webm" type="video/webm">
+            </video>
+        </header>
+        <ul class="toc">
+            <li class="item large" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Cover.55819be211dc9.jpg);">
+                <a href="#55817d763eab466361d748cc">
+                    <div class="copy">
+                        <p class="category">Greensboro, GA</p>
+                        <p class="title">The Ritz-Carlton, Reynolds Plantation</p>
+                        <p class="teaser">Located just 75 miles outside of Atlanta, this easy day trip is the perfect escape for anyone looking for a relaxing respite from city life.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item small" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/The_Inn_at_Serenbe.558181d967b44.jpg);">
+                <a href="#55817d985fab46a73fd748cb">
+                    <div class="copy">
+                        <p class="category">Chattahoochee Hills, GA</p>
+                        <p class="title">The Inn at Serenbe</p>
+                        <p class="teaser">Nestled on 900 picturesque acres in Palmetto, Georgia, Serenbe is a thoughtfully constructed community designed to promote healthy living and overall well-being.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item small" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/The_Umstead_Hotel_and_Spa.5581824d3279b.jpg);">
+                <a href="#55817dd957ab46a739d748cc">
+                    <div class="copy">
+                        <p class="category">Cary, NC</p>
+                        <p class="title">The Umstead Hotel and Spa</p>
+                        <p class="teaser">The pride of Cary, a town tucked inside The Research Triangle, The Umstead Hotel and Spa is a destination in and of itself, flaunting breathtaking views inside and out.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item small" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Hilton_Sandestin_Beach_Golf_Resort_and_Spa.5581828b0be07.jpg);">
+                <a href="#55817ddd77ab46f061d748e5">
+                    <div class="copy">
+                        <p class="category">Destin, FL</p>
+                        <p class="title">Hilton Sandestin Beach</p>
+                        <p class="teaser">The Hilton Sandestin is conveniently located near 30A and the charming coastal communities along it, yet with so much available right at your fingertips, you may never want to leave the resort.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item small" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Old_Edwards_Inn_and_Spa.558182b0b3278.jpg);">
+                <a href="#55817dde5fab46ac3fd748cf">
+                    <div class="copy">
+                        <p class="category">Highlands, NC</p>
+                        <p class="title">Old Edwards Inn and Spa</p>
+                        <p class="teaser">Perched at 4,000 feet atop the southwest plateau of the Blue Ridge Mountains, the inn sits at the edge of the sleepy hamlet of Highlands, North Carolina. </p>
+                    </div>
+                </a>
+            </li>
+            <li class="item full" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Keswick_Hall.558182d1bbb3c.jpg);">
+                <a href="#55817e2a5fab461d41d748ca">
+                    <div class="copy">
+                        <p class="category">Charlottesville, VA</p>
+                        <p class="title">Keswick Hall</p>
+                        <p class="teaser">If you’ve ever soaked in the panoramic views of the Blue Ridge Mountains from the top of Jefferson’s plantation, Monticello, Eden only begins to describe the sheer magnitude of its beauty. </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!-- .gallery -->
+    </main>
+    <!-- .main -->
+    <div class="panel">
+        <div class="wrapper">
+            <div class="content" id="55817d763eab466361d748cc">
+                <header class="cover-wrap" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Cover.55819be211dc9.jpg)">
+                    <div class="copy bottom text-left">
+                        <h4 class="category" contenteditable="true">Greensboro, GA</h4>
+                        <h1 class="title" contenteditable="true">The Ritz-Carlton, Reynolds Plantation</h1>
+                    </div>
+                </header>
+                <div class="body">
+                    <h3 class="teaser copy" contenteditable="true">Located just 75 miles outside of Atlanta, this easy day trip is the perfect escape for anyone looking for a relaxing respite from city life.</h3>
+                    <div class="wysiwyg" contenteditable="true">
+                    <div class="copy">
+                        <p>It’s pretty hard to make Mother Nature look any prettier in Greensboro, Georgia, but The Ritz-Carlton Lodge, Reynolds Plantation somehow figured it out. Located just 75 miles outside of Atlanta, this easy day trip is the perfect escape for anyone looking for a relaxing respite from city life with all the luxurious touches that define the Ritz-Carlton brand. Perched on scenic Lake Oconee, the resort houses a world-class spa and fitness center, five championship golf courses, three restaurants and an infinity pool just steps from the lakefront. Awarded the highly coveted Five Diamond rating from AAA, this peaceful retreat is among the best in the country.</p>
+                        <aside class="adjustable image-block right wide"><img alt="" src="http://r3.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/new_RCREYNO_00293_opt.556e2a81a8365.jpg" class="img-responsive">
+                            <div class="caption">Enjoy a couples massage in one of our private spa treatment rooms.</div>
+                        </aside>
+                        <h3>Relax&nbsp;</h3>
+                        <p>The recently renovated sundeck and stunning infinity pool is the perfect place to lounge with a book and a cocktail. The scenery itself is soothing, but those who truly want to unwind must visit the spa, which offers massages, body therapy treatments, facials and beauty packages. No matter what ails you, the 80-minute deep tissue massage with Arnica and steamed towels will fix it.</p>
+                        <h3>Sleep</h3>
+                        <p>The hotel’s rooms and suites offer private balconies with striking lake or resort views, but those traveling with family may prefer one of the charming, yet chic, lakeside cottages. With wood-burning fireplaces, wraparound porches and easy access to all of the resort’s amenities, it’s an idyllic home away from home.</p>
+                        <aside class="adjustable image-block left wide"><img alt="" src="http://r1.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/new_RCREYNO_00242_opt.556e2a802a240.jpg" class="img-responsive">
+                            <div class="caption">Each guest room offers outdoor seating and beautiful lake or garden views from the private terrace.</div>
+                        </aside>
+                        <h3>Play&nbsp;</h3>
+                        <p>Lake Oconee offers a wealth of activities for guests&mdash;boats, kayaks, canoes and paddle boards&mdash;but for those who prefer to stay on land, there’s horseback riding, Segway tours, eight miles of trails for hiking or biking, tennis and a golfer’s paradise with 99 holes on five championship courses.</p>
+                    </div>
+                    <aside style="background-image: url(&quot;http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/GolfCourse2.5581996cb3bfb.jpg&quot;);" class="adjustable image-block pinned stretch">
+                        <div class="copy">
+                            <div class="credit">GREAT WATERS HOLE #5</div><img alt="" src="http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/GolfCourse2.5581996cb3bfb.jpg" style="display: none;" class="img-responsive">
+                            <div class="caption">Designed by golfing legend Jack Nicklaus, the Great Waters course was named as one of the best courses in Georgia, second only to Augusta National.</div>
+                        </div>
+                    </aside>
+                    <div class="copy">
+                        <aside class="adjustable image-block right wide">
+                            <div class="credit">Gaby's by the lake</div><img alt="" src="http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/640w/Lake.55819b987ef71.jpg" style="display: block;" class="img-responsive">
+                            <div class="caption">&nbsp;Experience a relaxed lakeside dining experience with panoramic views, casual menu options and indoor and outdoor seating.</div>
+                        </aside>
+                        <h3>Eat</h3>
+                        <p>Georgia’s Bistro offers a relaxed, family-friendly atmosphere, an extensive wine list and modern fare with a Georgian flair. For a more casual option, Gaby’s by the Lake provides poolside service for their pizzas, salads and sandwiches. The Linger Longer Steakhouse, a gorgeous fine dining spot, boasts superb Certified Black Angus steaks and small-batch Woodford Reserve bourbon blended exclusively for the restaurant.
+                            <br>
+                        </p>
+                        <p><strong>1 Lake Oconee Trail </strong>
+                            <br><strong>Greensboro, GA 30642</strong></p>
+                        <p><strong>706-467-0600</strong></p>
+                        <p><strong><a target="_blank" href="http://www.ritzcarlton.com/en/Properties/ReynoldsPlantation/Default.htm">Reservations</a></strong>
+                        </p>
+                        <p><strong><a target="_blank" href="https://www.google.com/maps/place/The+Ritz-Carlton+Lodge,+Reynolds+Plantation/@33.438851,-83.1945385,765m/data=!3m2!1e3!4b1!4m2!3m1!1s0x88f6f270fd1d595f:0x13988999ef897c34!6m1!1e1?hl=en-US">View Map</a></strong>
+                        </p>
+                        <aside class="full"><img alt="" src="https://maps.googleapis.com/maps/api/staticmap?center=1%20Lake%20Oconee%20TrailGreensboro,%20GA%2030642&amp;zoom=15&amp;size=600x300&amp;markers=color:green|33.438851,-83.1945385&amp;scale=2" style="display: block;"></aside>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="content" id="55817d985fab46a73fd748cb">
+                <header class="cover-wrap" style="background-image: url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/The_Inn_at_Serenbe.558181d967b44.jpg)">
+                    <div class="copy middle text-left">
+                        <h4 class="category" contenteditable="true">Chattahoochee Hills, GA</h4>
+                        <h1 class="title" contenteditable="true">The Inn at Serenbe</h1>
+                    </div>
+                </header>
+                <div class="body">
+                    <h3 class="teaser copy" contenteditable="true">Nestled on 900 picturesque acres in Palmetto, Georgia, Serenbe is a thoughtfully constructed community designed to promote healthy living and overall well-being.</h3>
+                    <div class="copy">
+                        <p>If you’re longing for a rustic getaway without sacrificing comfort and luxury, look no further than Serenbe. Nestled on 900 picturesque acres in Palmetto, Georgia, Serenbe is a thoughtfully constructed community designed to promote healthy living and overall well-being. Divided into four distinct hamlets dedicated to the arts, agriculture, health/wellness and education, the community includes a planned neighborhood that is home to more than 400 residents, a 25-acre organic farm, a charming inn, boutique shopping, multiple dining options, art galleries and a spa. Built with sustainability as the chief goal and guiding principle, the community has preserved 70 percent of the land as green space.</p>
+                        <p>A short drive from Atlanta, Serenbe unites the familiarity and comfort of a lived-in neighborhood with the attentiveness and amenities of a luxury resort. The end result is a destination that feels welcoming, relaxing and full of possibilities.&nbsp;</p>
+                        <h3>Relax</h3>
+                        <p>The pastoral scenery has an instant calming effect, but those looking for further relaxation can lounge beside the Inn’s two pools or hot tubs or pay a visit to the Spa at Serenbe. The two-room spa is modest yet proficient and offers a broad variety of nail services, massages, facials and scrubs.<span style="color: #838383; font-size: 12px;" data-mce-style="color: #838383; font-size: 12px;">&nbsp;</span></p>
+                        <aside class="adjustable image-block standard left"><img class="img-responsive" style="display: block;" src="http://r1.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/Sarah_Hennessy_Favori_opt1.556e2b4ef3dcc.jpg" alt="" data-mce-src="http://r1.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/Sarah_Hennessy_Favori_opt1.556e2b4ef3dcc.jpg" data-mce-style="display: block;">
+                            <div class="caption">Our luxurious accommodations set in the rolling countryside on a 40 acre farm.</div>
+                        </aside>
+                        <h3>Sleep</h3>
+                        <p>Guests can choose from The Inn at Serenbe’s 19 rooms, located in six buildings across the grounds, or 13 rentals in the Serenbe neighborhood that include loft apartments, townhouses, cottages and single-family homes. Accommodations are tastefully decorated in neutral hues and include daily breakfast and afternoon tea at The Farmhouse.</p>
+                        <aside class="adjustable image-block wide right"><img class="img-responsive" style="display: block;" src="http://r1.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/Sarah_Hennessy_Favorit_opt.556e2b4c517e0.jpg" alt="" data-mce-src="http://r1.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/Sarah_Hennessy_Favorit_opt.556e2b4c517e0.jpg" data-mce-style="display: block;"></aside>
+                        <h3>Eat</h3>
+                        <p>The charming bakeshop Blue Eyed Daisy, located in the town center, is the perfect place to grab coffee, a fresh pastry or a light meal. Finer dining options include The Hil and The Farmhouse, which both rely on locally grown produce for their seasonal menus. The Farmhouse also bears the distinct honor of being voted Best Fried Chicken by Martha Stewart herself, and it’s not hard to see why after sampling the delicious weekend mainstay.</p>
+                        <h3>Play</h3>
+                        <p>A sanctuary for nature enthusiasts, the property includes 15 miles of trails, two waterfalls, wildflower meadows and two ponds. Activities include horseback riding, bike and golf cart rentals, ropes courses, croquet, hayrides, bonfires and a petting zoo. The Serenbe Playhouse brings year-round outdoor theater to various sites throughout the property, and the community regularly hosts festivals, markets, workshops and other events.
+                            <br>
+                        </p>
+                        <p>&nbsp;</p>
+                        <p><strong>10950 Hutcheson Ferry Road</strong>
+                            <br><strong>Chattahoochee Hills, GA 30268</strong></p>
+                        <p><strong>770-463-2610</strong></p>
+                        <p><strong><a title="The Inn at Serenbe" href="http://serenbeinn.com/" target="_blank" data-mce-href="http://serenbeinn.com/">Book Now!</a></strong>
+                            <br data-mce-bogus="1">
+                        </p>
+                        <p><strong><a href="https://www.google.com/maps/search/The+Inn+at+Serenbe+10950+Hutchesons+Ferry+Rd+Palmetto,+GA+30268/@33.5285765,-84.7439602,764m/data=!3m2!1e3!4b1?hl=en-US" target="_blank" >View Map</a></strong>
+                            <br data-mce-bogus="1">
+                        </p>
+                        <aside class="full right"><img style="display: block;" src="https://maps.googleapis.com/maps/api/staticmap?center=10950 Hutcheson Ferry Road
+                    Chattahoochee Hills, GA 30268&amp;zoom=15&amp;size=600x300&amp;markers=color:green|33.5285765,-84.7439602&amp;scale=2" alt=""></aside>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="55817dd957ab46a739d748cc">
+                <header class="cover-wrap" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/The_Umstead_Hotel_and_Spa.5581824d3279b.jpg)">
+                    <div class="copy top text-center">
+                        <h4 class="category" contenteditable="true">Cary, NC</h4>
+                        <h1 class="title" contenteditable="true">The Umstead Hotel and Spa</h1>
+                    </div>
+                </header>
+                <div class="body">
+                    <h3 class="teaser copy" contenteditable="true">The pride of Cary, a town tucked inside The Research Triangle, The Umstead Hotel and Spa is a destination in and of itself, flaunting breathtaking views inside and out.</h3>
+                    <div class="copy">
+                        <p>North Carolina’s highest ranked hotel is a luxury retreat that beckons visitors seeking a sophisticated blend of tranquility and indulgence. The pride of Cary, a town tucked inside The Research Triangle, The Umstead Hotel and Spa is a destination in and of itself, flaunting breathtaking views inside and out. The resort backs up to a three-acre lake encircled by native long-leaf pines and 14 acres of serene, woodland landscape. Indoors, every wall and surface, from the lounge to lavatories, is adorned with thoughtfully curated art from nationally renowned artists, including Dale Chihuly and Shelly Hehenberger, and local talent like Mark Hewitt and Herb Jackson. The executive culinary team at Herons continues to indulge the senses through their innovative, provisional menu by expertly incorporating herbs grown on the property, as well as seasonal fruits and vegetables from their nearby one-acre farm.</p>
+                        <h3>Relax</h3>
+                        <p>The 5,000-square-foot, two-story spa includes everything from a eucalyptus steam room to a meditation courtyard for relaxation post-treatment. With refreshing teas and elixirs, cool cucumber compresses, private cabanas and an all-encompassing menu of treatments, the spa accounts for your every need.</p>
+                    </div>
+                    <aside class="adjustable image-block pinned stretch" style="background-image: url(http://r3.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/Spa_Courtyard_opt.556e2c7e04a66.png);"><img class="img-responsive" style="display: none;" src="http://r3.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/Spa_Courtyard_opt.556e2c7e04a66.png" alt=""></aside>
+                    <div class="copy">
+                        <h3>Sleep</h3>
+                        <p>Choose from 123 guest rooms and 27 suites with views of the shimmering lake or natural landscape. In-room Evolve tablets allow full control of lights and temperature at the touch of a finger while amenities like Italian linens, artisan chocolates, and plush robes and slippers heighten your average nightly turndown.
+                            <br>
+                        </p>
+                        <aside class="adjustable image-block wide left"><img class="img-responsive" style="display: block;" src="http://r2.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/Lake_View_King__LVK__opt.556e2c7bd06a1.jpg" alt="">
+                            <div class="caption">Overlooking our naturally landscaped grounds, the Premier Rooms range from 540 – 570 square feet. Select your choice of one king-sized or two double-sized pillow-top beds.</div>
+                        </aside>
+                        <h3>Play</h3>
+                        <p>Between the spa and culinary experiences, cruise around—whether on foot or by complimentary bike—the quarter-mile lake trail complete with fountains, turtle nesting rocks and butterfly gardens. Or take a self-guided tour of the property’s extensive art collection featured throughout the hotel and adjoining gallery.&nbsp;</p>
+                        <aside class="adjustable image-block right wide"><img class="img-responsive" style="display: block;" src="http://r2.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/Terrace1_opt.556e2c7ee397b.jpg" alt=""></aside>
+                        <h3>Eat</h3>
+                        <p>Herons—where edible art comes in three or four courses paired by a team of sommeliers—has been awarded Five Diamonds from AAA and Five Stars from Forbes Travel Guide. The hotel’s more casual dining option, The Bar and Lounge, offers a full menu, an extensive wine list, and a rotating selection of seasonal cocktails, house-made infusions and drinking vinegars.</p>
+                        <p><strong>100 Woodland Pond Drive</strong>
+                            <br><strong>Cary, NC 27513</strong></p>
+                        <p><strong>919-447-4000</strong></p>
+                        <p><strong><a href="http://www.theumstead.com/" target="_blank">Check Availability</a></strong>
+                            <br data-mce-bogus="1">
+                        </p>
+                        <p><strong><a href="https://www.google.com/maps/place/The+Umstead+Hotel+and+Spa/@35.829792,-78.7643389,743m/data=!3m2!1e3!4b1!4m2!3m1!1s0x89acf15b80ddf5d7:0x609ec05842e86499!6m1!1e1?hl=en-US" target="_blank">View Map</a></strong>
+                            <br data-mce-bogus="1">
+                        </p>
+                        <aside class="full right"><img style="display: block;" src="https://maps.googleapis.com/maps/api/staticmap?center=100 Woodland Pond Drive
+                Cary, NC 27513&amp;zoom=15&amp;size=600x300&amp;markers=color:green|35.829792,-78.7643389&amp;scale=2" alt=""></aside>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="55817ddd77ab46f061d748e5">
+                <header class="cover-wrap" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Hilton_Sandestin_Beach_Golf_Resort_and_Spa.5581828b0be07.jpg)">
+                    <div class="copy bottom text-right">
+                        <h4 class="category" contenteditable="true">Destin, FL</h4>
+                        <h1 class="title" contenteditable="true">Hilton Sandestin Beach</h1>
+                    </div>
+                </header>
+                <div class="body">
+                    <h3 class="teaser copy" contenteditable="true">The Hilton Sandestin is conveniently located near 30A and the charming coastal communities along it, yet with so much available right at your fingertips, you may never want to leave the resort.</h3>
+                    <div class="copy">
+                        <p>Towering above the white sands of South Walton’s Gulf Coast, the newly renovated Hilton Sandestin Beach Golf Resort and Spa is North Florida’s only full-service beachfront resort. Just in time for its 30th anniversary, the hotel unveiled a $30 million renovation that improved every inch of the property. With seven dining options, three pools, four golf courses, a lavish spa, babysitting services, children’s programs, and an array of beach and water activities, it’s ideal for any type of excursion imaginable, from a romantic getaway to a family vacation. The Hilton Sandestin is conveniently located near 30A and the charming coastal communities along it, yet with so much available right at your fingertips, you may never want to leave the resort.</p>
+                        <h3>Sleep</h3>
+                        <p>The resort’s two towers boast 602 deluxe rooms and suites, each with a private balcony providing full or partial Gulf views. The Spa Tower’s two 1,100-square-foot Presidential Suites offer panoramic vistas from every room, while the Emerald Tower houses family-friendly Deluxe Junior Suites, furnished with bunk beds, a sleeper sofa and a king or two double beds.&nbsp;</p>
+                    </div>
+                    <aside class="adjustable image-block pinned stretch" style="background-image: url('http://r3.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/1920w/HSB_PRES_MASTER_BEDROO_opt.556e2d6a00888.jpg');"><img class="img-responsive" style="display: none;" src="http://r3.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/1920w/HSB_PRES_MASTER_BEDROO_opt.556e2d6a00888.jpg" alt="">
+                        <div class="caption">All Guest Rooms at the Hilton Sandestin Beach Golf Resort &amp; Spa have a contemporary decor with a private balcony.</div>
+                    </aside>
+                    <div class="copy">
+                        <aside class="adjustable image-block left wide"><img class="img-responsive" style="display: block;" src="http://r2.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/HSB_Sandcastles_bar_ov_opt.556e2d6c8ac41.jpg" alt="">
+                            <div class="caption">We’re proud to be the largest full-service beachfront resort on Northwest Florida’s Gulf Coast.</div>
+                        </aside>
+                        <h3>Relax</h3>
+                        <p>The 14,500-square-foot Serenity by the Sea Spa, located on the property, is the ultimate relaxation destination. In addition to world-class facilities—men’s and women’s whirlpools, steam rooms, saunas and lounge areas—and more than 50 treatments, the spa is also home to a full-service salon and 24-hour fitness center.<span style="color: #838383; font-size: 12px; text-align: right;">&nbsp;</span></p>
+                        <p>&nbsp;</p>
+                        <h3>Play</h3>
+                        <p>With four golf courses, a putting course, 15 tennis courts, bikes, kayaks, paddle boards, scuba and snorkeling, three heated pools, two whirlpools, beach volleyball, a game room, and beach chair and umbrella rentals, there is no shortage of activity for guests. Nearby, The Village of Baytowne Wharf, accessible by private paved trails, is a hub for dining, shopping and nightlife.</p>
+                        <aside class="adjustable image-block right wide"><img class="img-responsive" style="display: block;" src="http://r2.nfocusnashville.com/files/base/scomm/nfn/image/2015/06/640w/HSB_Pool_From_621_opt.556e2d6b4c294.jpg" alt="">
+                            <div class="caption">As a salt- and sand-free alternative to our Gulf of Mexico beach, Hilton Sandestin Beach Golf Resort &amp; Spa offers guests the use of three heated pools, one indoor and two outdoor. We also have two whirlpools and a toddler pool.</div>
+                        </aside>
+                        <h3>Eat</h3>
+                        <p>The seven dining options encompass everything from poolside drinks to fresh sushi to decadent steak dinners. Barefoot’s serves casual fare to swimmers and sunbathers all day long, while Seagar’s, Destin’s only AAA Four Diamond restaurant, is a must-visit for fine dining. The Coffee Shop in the main lobby opens daily at 6:30 a.m., serving pastries and Starbucks coffee, the perfect fuel for a morning stroll on the beach.</p>
+                        <p>&nbsp;</p>
+                        <p><strong>4000 Sandestin Blvd. S.</strong>
+                            <br><strong>Destin, FL 32550</strong></p>
+                        <p><strong>850-267-9500</strong></p>
+                        <p><strong><a href="http://www.hiltonsandestinbeach.com/" target="_blank">Reservations</a></strong>
+                            <br data-mce-bogus="1">
+                        </p>
+                        <p><strong><a href="https://www.google.com/maps/place/Hilton+Sandestin+Beach+Golf+Resort+%26+Spa/@30.369953,-86.327499,1252m/data=!3m2!1e3!4b1!4m2!3m1!1s0x88915944d557ed57:0x2eefb388f67692ce!6m1!1e1?hl=en-US" target="_blank">View Map</a></strong>
+                            <br data-mce-bogus="1">
+                        </p>
+                        <aside class="full right"><img style="display: block;" src="https://maps.googleapis.com/maps/api/staticmap?center=4000 Sandestin Blvd. S.
+                Destin, FL 32550&amp;zoom=15&amp;size=600x300&amp;markers=color:green|30.369953,-86.327499&amp;scale=2" alt=""></aside>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="55817dde5fab46ac3fd748cf">
+                <header class="cover-wrap" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Old_Edwards_Inn_and_Spa.558182b0b3278.jpg)">
+                    <div class="copy middle text-right">
+                        <h4 class="category" contenteditable="true">Highlands, NC</h4>
+                        <h1 class="title" contenteditable="true">Old Edwards Inn and Spa</h1>
+                    </div>
+                </header>
+                <div class="body">
+                    <h3 class="teaser copy" contenteditable="true">Perched at 4,000 feet atop the southwest plateau of the Blue Ridge Mountains, the inn sits at the edge of the sleepy hamlet of Highlands, North Carolina.</h3>
+                </div>
+            </div>
+            <div class="content" id="55817e2a5fab461d41d748ca">
+                <header class="cover-wrap" style="background-image:url(http://media.baseplatform.io/files/base/scomm/nfn/image/2015/06/1920w/Keswick_Hall.558182d1bbb3c.jpg)">
+                    <div class="copy top text-right">
+                        <h4 class="category" contenteditable="true">Charlottesville, VA</h4>
+                        <h1 class="title" contenteditable="true">Keswick Hall</h1>
+                    </div>
+                </header>
+                <div class="body">
+                    <h3 class="teaser copy" contenteditable="true">If you’ve ever soaked in the panoramic views of the Blue Ridge Mountains from the top of Jefferson’s plantation, Monticello, Eden only begins to describe the sheer magnitude of its beauty.</h3>
+                </div>
+            </div>
+        </div>
+        <a class="close" href="#"></a>
+    </div>
